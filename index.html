@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <title>Invoice</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Invoice</h1>
+        <p>There are <span>*</span> total invoices</p>
+      </div>
+      <div>       
+        <select name="filterOption" id="filterOption">
+          <option label="Filter by status" value="" selected></option>
+          <option value="draft">Draft</option>
+          <option value="paid">Paid</option>
+          <option value="pending">Pending</option>
+        </select>
+        <a href="pages/newInvoice.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> New invoice</a>
+      </div>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <td>id</td>
+          <td>date</td>
+          <td>name</td>
+          <td>price</td>
+          <td>status</td>
+        </tr>
+      </table>
+    </main>
+    <script defer src="js/index.js"></script>
+  </body>
+</html>
