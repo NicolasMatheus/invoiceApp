@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css" media="screen">
-        <title>New invoice</title>
-    </head>
-    <body>
-        <h1>New Invoice</h1>
-        <section>
-            <p>Bill From</p>
-            <label for="address">Street Address</label>
-            <input type="text" name="address" id="address">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city">
-            <label for="zipCode">Zip Code</label>
-            <input type="text" name="zipCode" id="zipCode">
-            <label for="country">Country</label>
-            <input type="text" name="country" id="country">
-        </section>
-        <section>
-            <p>Bill To</p>
-            <label for="clientName">Client's Name</label>
-            <input type="text" name="clientName" id="clientName">
-            <label for="clientEmail">Client's Email</label>
-            <input type="text" name="clientEmail" id="clientEmail">
-            <label for="address">Street Address</label>
-            <input type="text" name="address" id="address">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city">
-            <label for="zipCode">Zip Code</label>
-            <input type="text" name="zipCode" id="zipCode">
-            <label for="country">Country</label>
-            <input type="text" name="country" id="country">
-        </section>
-        <section>
-            <label for="invoiceDate">Invoice Date</label>
-            <input type="text" name="" id="">
-            <label for="paymentTermns">Payment Terms</label>
-            <input type="text" name="" id="">
-            <label for="paymentDue">Payment Due</label>
-            <input type="text" name="" id="">
-            <label for="productDescription">Product Description</label>
-            <input type="text" name="" id="">
-        </section>
-        <section>
-            <p>Item List</p>
-            <div>
-                <label for="itemName">Item Name</label>
-                <input type="text" name="itemName" id="itemName">
-                <label for="qty">Qty</label>
-                <input type="text" name="qty" id="qty">
-                <label for="price">Price</label>
-                <input type="text" name="price" id="price">
-                <label for="total">total</label>
-                <span>$</span>
-                <!-- <input type="hidden" name="total" id="total"> -->
-                <i class="fa fa-trash" aria-hidden="true"></i>
-            </div>
-            <button><i class="fa fa-plus" aria-hidden="true"></i> Add New Item</button>
-        </section>
-        <section>
-            <button type="reset">Discard</button>
-            <button>Save Draft</button>
-            <button>Create Invoice</button>
-        </section>
-        <script defer src="js/index.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/newInvoice.css" media="screen">
+    <link rel="stylesheet" href="../css/reset.css" media="screen">
+    <title>New invoice</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">New Invoice</h1>
+      <form>
+        <div class="billFrom">
+          <span class="smallText">Bill From</span>
+          <label for="address">Street Address</label>
+          <input type="text" name="address" id="address">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city">
+          <label for="zipCode">Zip Code</label>
+          <input type="text" name="zipCode" id="zipCode">
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country">
+        </div>
+        <div class="billTo">
+          <span class="smallText">Bill To</span>
+          <label for="clientName">Client's Name</label>
+          <input type="text" name="clientName" id="clientName">
+          <label for="clientEmail">Client's Email</label>
+          <input type="email" name="clientEmail" id="clientEmail">
+          <label for="address">Street Address</label>
+          <input type="text" name="address" id="address">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city">
+          <label for="text">Zip Code</label>
+          <input type="text" name="zipCode" id="zipCode">
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country">
+          <label for="invoiceDate">Invoice Date</label>
+          <input type="date" name="invoiceDate" id="invoiceDate">
+          <label for="paymentTermns">Payment Terms</label>
+          <input type="text" name="paymentTermns" id="paymentTermns">
+          <label for="paymentDue">Payment Due</label>
+          <input type="text" name="paymentDue" id="paymentDue">
+          <label for="productDescription">Product Description</label>
+          <input type="text" name="productDescription" id="productDescription">
+        </div>
+        <div>
+          <span class="smallText">Item List</span>
+          <label for="itemName">Item Name</label>
+          <input type="text" name="itemName" id="itemName">
+          <div>
+            <label for="qty">Qty</label>
+            <input type="number" name="qty" id="qty">
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price">
+            <label for="total">total <span id="money">$</span></label>
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </div>
+          <button class="btn-newItem"><i class="fa fa-plus" aria-hidden="true"></i> Add New Item</button>
+        </div>
+        <div>
+          <button type="reset" value="Discard" id="clear">Clear</button>
+          <button class="submit" id="submit">Create Invoice</button>
+        </div>
+      </form>
+    </div>
+    <script defer src="../js/newInvoice.js"></script>
+  </body>
 </html>

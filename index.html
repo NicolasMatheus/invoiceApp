@@ -6,36 +6,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" media="screen">
+    <link rel="stylesheet" href="css/reset.css" media="screen">
     <title>Invoice</title>
   </head>
   <body>
-    <header>
-      <div>
-        <h1>Invoice</h1>
-        <p>There are <span>*</span> total invoices</p>
-      </div>
-      <div>       
-        <select name="filterOption" id="filterOption">
-          <option label="Filter by status" value="" selected></option>
-          <option value="draft">Draft</option>
-          <option value="paid">Paid</option>
-          <option value="pending">Pending</option>
-        </select>
-        <a href="pages/newInvoice.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> New invoice</a>
-      </div>
-    </header>
-    <main>
-      <table>
-        <tr>
-          <td>id</td>
-          <td>date</td>
-          <td>name</td>
-          <td>price</td>
-          <td>status</td>
-        </tr>
-      </table>
-    </main>
+    <div class="container">
+      <header class="header">
+        <div>
+          <h1 class="title">Invoice</h1>
+          <span class="span">There are <span id="counter">*</span> total invoices</span>
+        </div>
+        <div>       
+          <select name="filterOption" id="filterOption" class="filter">
+            <option label="Filter by status" value="" selected></option>
+            <option value="draft">Draft</option>
+            <option value="paid">Paid</option>
+            <option value="pending">Pending</option>
+            <option value="late">Late</option>
+          </select>
+          <a class="btn-invoice" href="pages/newInvoice.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> New invoice</a>
+        </div>
+      </header>
+      <main class="main">
+        <table class="table">
+          <tr>
+            <td>129384710234</td>
+            <td>01/01/0001</td>
+            <td>Lorem ipsum dolor</td>
+            <td>$000</td>
+            <td>Paid</td>
+          </tr>
+        </table>
+      </main>
+    </div>
     <script defer src="js/index.js"></script>
   </body>
 </html>

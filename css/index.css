@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15rem;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.span {
+  font-weight: 100;
+  font-size: 0.80rem;
+}
+
+.filter {
+  background-color: #f2f2f2;
+  box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.btn-invoice {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding: .5rem;
+  margin-left: 3rem;
+}
+.btn-invoice:visited {
+  text-decoration: none;
+}
+
+.main {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.table {
+  display: flex;
+  font-weight: 100;
+}

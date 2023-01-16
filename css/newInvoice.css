@@ -1,0 +1,51 @@
+label {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 100;
+}
+input {
+  background-color: #f2f2f2;
+  box-shadow: none;
+  border: 1px solid black;
+  width: 30rem;
+  height: 2rem;
+}
+
+hr {
+  width: 12rem;
+}
+
+.container {
+  margin-left: 5rem;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.smallText {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.fa-trash {
+  position: relative;
+  float: right;
+  right: 770px;
+}
+
+.btn-newItem {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 23rem;
+  height: 3rem;
+}
